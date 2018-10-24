@@ -2,6 +2,7 @@ ack
 binwalk
 boost
 cabextract
+caddy
 ccache
 cloc
 cmake
@@ -11,6 +12,7 @@ composer
 coreutils
 dos2unix
 ffmpeg
+figlet
 fping
 freetype
 gawk
@@ -23,6 +25,7 @@ glib
 gmp
 gnu-sed
 gnutls
+go
 gzip
 htop
 icu4c
