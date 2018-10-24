@@ -30,13 +30,14 @@ defaults write com.apple.AppleMultitouchMouse MouseHorizontalScroll -int 1
 defaults write com.apple.AppleMultitouchMouse MouseVerticalScroll -int 1
 
 echo "- More sane trackpad scrolling"
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 
 echo "- Force touch enabling"
 defaults write NSGlobalDomain com.apple.trackpad.forceClick -bool true
 
 echo "- Dock on the left"
-defaults write com.apple.dock 'orientation' -string 'left'
+defaults write com.apple.dock orientation -string left
+defaults write com.apple.dock magnification -int 0
 
 echo "- Mission control: group by app"
 defaults write com.apple.dock expose-group-apps -bool true

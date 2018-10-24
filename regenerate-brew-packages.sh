@@ -1,3 +1,3 @@
 #!/bin/sh
-brew cask list > brew-cask-packages
-brew list > brew-packages
+brew cask list | sort > brew-cask-packages
+brew list | sort > brew-packages
