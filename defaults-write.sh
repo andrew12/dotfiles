@@ -25,11 +25,7 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 echo "- Disable dash substitution"
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
-echo "- Enable sane trackpad scrolling"
-defaults write com.apple.AppleMultitouchMouse MouseHorizontalScroll -int 1
-defaults write com.apple.AppleMultitouchMouse MouseVerticalScroll -int 1
-
-echo "- More sane trackpad scrolling"
+echo "- Natural scrolling"
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 
 echo "- Force touch enabling"

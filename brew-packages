@@ -1,13 +1,17 @@
+ack
 binwalk
 boost
 cabextract
 ccache
 cloc
 cmake
+cmatrix
 colordiff
+composer
 coreutils
 dos2unix
 ffmpeg
+fping
 freetype
 gawk
 gcc
@@ -20,6 +24,7 @@ gmp
 gnu-sed
 gnutls
 gzip
+htop
 icu4c
 iftop
 imagemagick
@@ -47,6 +52,7 @@ mas
 md5sha1sum
 mingw-w64
 mitmproxy
+mosh
 mpfr
 ncurses
 neofetch
