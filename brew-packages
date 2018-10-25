@@ -11,8 +11,11 @@ colordiff
 composer
 coreutils
 dos2unix
+faac
+fdk-aac
 ffmpeg
 figlet
+flac
 fping
 freetype
 gawk
@@ -35,6 +38,7 @@ ipmitool
 isl
 jpeg
 lame
+libav
 libevent
 libffi
 libidn2
@@ -49,6 +53,7 @@ libvorbis
 libvpx
 little-cms2
 llvm
+mad
 makedepend
 mariadb
 mas
@@ -57,6 +62,7 @@ mingw-w64
 mitmproxy
 mosh
 mpfr
+mplayer
 ncurses
 neofetch
 nettle
@@ -73,6 +79,7 @@ pcre
 pcre2
 pixman
 pkg-config
+progress
 protobuf
 pv
 pwgen
@@ -89,6 +96,7 @@ sdl2
 sip
 sloccount
 snappy
+sox
 sphinx-doc
 sqlite
 ssdeep
