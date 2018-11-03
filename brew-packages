@@ -1,5 +1,11 @@
 ack
+apr
+apr-util
+argon2
 asciinema
+aspell
+autoconf
+automake
 binwalk
 boost
 cabextract
@@ -13,6 +19,7 @@ colordiff
 composer
 coreutils
 cvs
+dcraw
 dos2unix
 expat
 faac
@@ -23,6 +30,7 @@ figlet
 flac
 fluid-synth
 fping
+freetds
 freetype
 gawk
 gcc
@@ -41,13 +49,16 @@ icu4c
 iftop
 imagemagick
 ipmitool
+irssi
 isl
+jasper
 jpeg
 lame
 libao
 libav
 libevent
 libffi
+libiconv
 libid3tag
 libidn2
 libmpc
@@ -55,7 +66,9 @@ libmpdclient
 libogg
 libowfat
 libpng
+libpq
 libsamplerate
+libsodium
 libtasn1
 libtiff
 libtool
@@ -63,6 +76,7 @@ libunistring
 libupnp
 libvorbis
 libvpx
+libzip
 little-cms2
 llvm
 mad
@@ -85,6 +99,7 @@ ninja
 nmap
 node
 openjpeg
+openldap
 openssl
 optipng
 opus
@@ -92,6 +107,7 @@ p11-kit
 p7zip
 pcre
 pcre2
+php
 pixman
 pkg-config
 progress
@@ -106,6 +122,7 @@ qt
 readline
 redis
 rename
+scale2x
 screenresolution
 sdl2
 sip
@@ -113,6 +130,7 @@ sl
 sloccount
 snappy
 sox
+speedtest-cli
 sphinx-doc
 sqlite
 ssdeep
@@ -122,7 +140,9 @@ telnet
 theora
 tmux
 tree
+ufraw
 uncrustify
+unixodbc
 unrar
 watch
 webp
@@ -133,3 +153,4 @@ x265
 xvid
 xz
 youtube-dl
+zbar
