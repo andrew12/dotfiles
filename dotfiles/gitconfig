@@ -8,6 +8,7 @@
 
 [alias]
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lgx = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Creset' --abbrev-commit
     l  = log --stat
     ca = commit --amend --reset-author --signoff
     cm = commit -s -m
@@ -16,7 +17,9 @@
     ds = diff --staged
     g  = grep
     mb = merge -srecursive -Xpatience -Xtheirs --progress --signoff
-    pr = pull --autostash
+    mi = merge --signoff -v --log --stat --commit
+    pra = pull --autostash
+    pr = pull --rebase --stat
     ri = rebase -i
     rl = reflog
     rs = reset --hard
@@ -25,7 +28,7 @@
     smui = submodule update --init
     smuir = submodule update --init --recursive
     st = status
-    lcn = shortlog -sn   
+    lcn = shortlog -sn
     prune-all = !git remote | xargs -n 1 git remote prune
     cherry-pick-merge = !"sh -c 'git cherry-pick --no-commit --mainline 1 $0 && \
       git log -1 --pretty=%P $0 | cut -b 42- > .git/MERGE_HEAD && \
@@ -40,4 +43,4 @@
     };f"
     fsck-all = fsck -v --full --progress --strict
     gc-all = gc --aggressive --prune
-
+    fetch-lite = --update-shallow --depth 1

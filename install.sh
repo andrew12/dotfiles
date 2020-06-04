@@ -1,36 +1,37 @@
 #!/bin/bash
+source functions/common
 
-# Copy my gitconfigs...
-ditto -v .gitconfig ~/.gitconfig
-ditto -v .gitignore ~/.gitignore
+print_line "Setting up the environment."
 
-ditto -v .clang-format ~/.clang-format
+# Copy dotfiles to home
+./scripts/install-dotfiles.sh
 
-# Install homebrew.
-if [ ! -f /usr/local/bin/brew ]; then
-    xcode-select --install
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
+# Set the default shell to bash
+./scripts/set-shell-to-bash.sh
 
-cat brew-packages | xargs brew install
-cat brew-cask-packages | xargs brew cask install
+# Install homebrew
+./scripts/install-homebrew.sh
 
-# Install long list of packages.
-IFS=$'\n'
-
-# for i in `cat brew-packages`; do
-#     brew install $i;
-# done
-# for i in `cat brew-cask-packages`; do
-#     brew cask install $i;
-# done
-# for i in `cat mas-app-ids`; do
-#     mas install $i;
-# done
+# Install homebrew packages
+./scripts/install-homebrew-packages.sh
 
 # Set sane defaults
-./defaults-write.sh
+./scripts/defaults-write.sh
+
+# Remap keyboard settings
+./scripts/remap-keyboard.sh
+
+# Set up applications
+./scripts/defaults-app-write.sh
+
+# Create and install the Root FS overlay root
+./scripts/install-rootfs-overlay.sh
 
 # Start services
-brew services start mariadb
-brew services start redis
+./scripts/start-services.sh
+
+# Install Xcode dependencies.
+./scripts/install-xcode-dependencies.sh
+
+# Restart userspace
+./scripts/restart-userspace.sh
